@@ -26,7 +26,7 @@ import com.lifotech.rtsa.storm.utils.AppConstant;
  */
 public final class AlchemySentimentIndexCalculator  {
 
-	// Creation of logger
+	// Logger creation 
 	private static final Logger logger = LoggerFactory.getLogger(AlchemySentimentIndexCalculator.class);
 
 	/*
