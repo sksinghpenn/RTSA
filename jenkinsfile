@@ -1,28 +1,18 @@
-pipelineJob {
+pipeline {
 
     agent any
     stages {
 
-        stage('cleaning stage') {
+        stage('build') {
             steps {
-                sh "mvn clean"
+                sh "echo 'Mu first pipleline' "
+                sh '''
+                    echo "By the way, i can do more stuff"
+                    ls -ls
+                    '''
             }
         }
 
-        stage('building  stage') {
-            steps {
-                sh "mvn package"
-            }
-         }
-
-        stage('testing  stage') {
-           steps {
-               sh "mvn test"
-           }
-        }
-
-
-    }
 
 
 }
