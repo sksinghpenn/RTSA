@@ -147,5 +147,10 @@
     <orderEntry type="library" name="Maven: org.apache.storm:storm-kafka:0.9.2-incubating" level="project" />
     <orderEntry type="library" name="Maven: org.apache.curator:curator-framework:2.4.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.curator:curator-client:2.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven.surefire:surefire-junit3:3.0.0-M5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven.surefire:common-junit3:3.0.0-M5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven.surefire:surefire-api:3.0.0-M5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven.surefire:surefire-logger-api:3.0.0-M5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven.surefire:surefire-shared-utils:3.0.0-M4" level="project" />
   </component>
 </module>

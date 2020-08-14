@@ -45,7 +45,17 @@ pipeline {
 
      post {
 
-         always {
+        success {
+            archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+            junit 'target/surefire-reports/*.xml'
+
+        }
+        failure {
+              mail to: 'sksingh.psu@gmail.com',
+                          subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+                          body: "Something is wrong with ${env.BUILD_URL}"
+         }
+        /*  always {
              echo 'i will always get executed'
          }
          success {
@@ -56,7 +66,7 @@ pipeline {
          }
          unstable {
              echo 'I will only get executed if this is unstable'
-         }
+         } */
      }
 
  }
