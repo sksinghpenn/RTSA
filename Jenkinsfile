@@ -1,4 +1,4 @@
-ppipeline {
+pipeline {
      agent any
      environment {
          FIRST_NAME='SK'
