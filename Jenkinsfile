@@ -6,11 +6,7 @@ pipeline {
         stage('build') {
             steps {
                 sh "echo 'Mu first pipleline' "
-                sh '''
-                    echo "By the way, i can do more stuff"
-                    ls -ls
-                    '''
-            }
+               }
         }
    }
 
