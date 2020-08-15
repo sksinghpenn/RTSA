@@ -41,6 +41,13 @@ pipeline {
                 sh 'mvn package'
              }
          }
+
+         stage('build') {
+              steps {
+                 sh 'mvn sonar:sonar'
+              }
+         }
+
      }
 
      post {
