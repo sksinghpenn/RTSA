@@ -42,7 +42,7 @@ pipeline {
              }
          }
 
-         stage('build') {
+         stage('sonar') {
               steps {
                  sh 'mvn sonar:sonar'
               }
