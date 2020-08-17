@@ -36,12 +36,17 @@ pipeline {
              }
          }
 
-         stage('build') {
+      /*    stage('build') {
              steps {
                 sh 'mvn package'
              }
-         }
+         } */
 
+        stage('build') {
+             steps {
+                sh 'mvn install'
+             }
+         }
          stage('sonar') {
               steps {
                  sh 'mvn sonar:sonar'

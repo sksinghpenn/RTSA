@@ -460,4 +460,16 @@
 
         <finalName>RTST-SWENG-PennState</finalName>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>debf2fc204a4-releases</name>
+            <url>http://54.235.212.158:8081/artifactory/test-maven-virtual</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>debf2fc204a4-snapshots</name>
+            <url>http://54.235.212.158:8081/artifactory/test-maven-virtual</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
